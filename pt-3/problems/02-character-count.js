@@ -10,7 +10,18 @@
 */
 
 function characterCount(string) {
-  // Your code here 
+  // Your code here
+  const count ={};
+
+  for(const char of string){
+    if(count[char]){
+        count[char]++;
+    }else{
+        count[char]=1;
+    }
+  }
+  return count;
+
 }
 
 
