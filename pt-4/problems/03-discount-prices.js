@@ -13,7 +13,13 @@
 
 */
 
-// Your code here 
+// Your code here
+const discountPrices = ((arr1, arr2) =>{
+    return arr1.map((price, index)=>{
+        const discPrice = price*(1-arr2[index])
+        return "$"+discPrice.toFixed(2);
+    })
+})
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

@@ -21,7 +21,10 @@
 */
 
 function dynamicModulus(num) {
-  // Your code here 
+  // Your code here
+  return function(val){
+      return val%num;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
