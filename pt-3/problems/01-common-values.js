@@ -16,16 +16,15 @@
 // const bunny = {color: 'white', favoriteFood: 'carrots'};
 function commonValues(obj1, obj2) {
   // Your code here
-//   let valuesInCommon = [];
+  const valuesInCommon = [];
 
-//   for (const value in obj1) {
-//       if (obj1.value !== obj2.value){
-//         valuesInCommon.push(obj1.value)
-//       }
-//      }
+  for (const key in obj1) {
+      if (obj2.hasOwnProperty(key) && obj1[key] === obj2[key]) {
+          valuesInCommon.push(obj1[key]);
+      }
+  }
 
-
-//   return valuesInCommon;
+  return valuesInCommon;
 
 }
 //console.log(commonValues(cat, bunny)); // prints ['white']

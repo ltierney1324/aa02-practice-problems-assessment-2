@@ -22,7 +22,7 @@ function leastCommonFlavor(candyBag) {
   }
   let flavor = '';
   let minCount = Infinity;
-  for(const flav of candyBag){
+  for(const flav in candyBag){
     if(candyBag[flav] <minCount){
         flavor = flav;
         minCount = candyBag[flav]
