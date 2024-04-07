@@ -13,7 +13,22 @@ Least and Most Expensive Toys:
 */
 
 function leastAndMostExpensive(catalog) {
-  // Your code here 
+  // Your code here
+  let leastExp = null;
+  let mostExp = null;
+
+  for(const toy in catalog){
+    if(leastExp === null || catalog[toy] < catalog[leastExp]){
+        leastExp = toy;
+    }
+    if(mostExp === null || catalog[toy] > catalog[mostExp]){
+        mostExp = toy;
+    }
+
+  }
+  return [leastExp, mostExp];
+
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

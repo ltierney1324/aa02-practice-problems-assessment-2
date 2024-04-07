@@ -15,7 +15,20 @@ Least common flavor:
 */
 
 function leastCommonFlavor(candyBag) {
-  // Your code here 
+  // Your code here
+
+  if(Object.keys(candyBag).length === 0){
+    return null;
+  }
+  let flavor = '';
+  let minCount = Infinity;
+  for(const flav of candyBag){
+    if(candyBag[flav] <minCount){
+        flavor = flav;
+        minCount = candyBag[flav]
+    }
+  }
+  return flavor;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
